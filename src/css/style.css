@@ -10,12 +10,7 @@
 }
 ::-webkit-scrollbar {
    -webkit-appearance: none;
-   width: 7px;
-}
-::-webkit-scrollbar-thumb {
-   border-radius: 4px;
-   background-color: rgba(0, 0, 0, 0.5);
-   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+   width: 0px;
 }
 html,
 body,
@@ -98,9 +93,6 @@ button {
    text-transform: uppercase;
    color: #666;
 }
-.header {
-   position: relative;
-}
 .header::after {
    content: "";
    position: absolute;
@@ -120,6 +112,7 @@ button {
    -ms-flex-align: center;
    align-items: center;
    padding: 35px 15px;
+   position: relative;
 }
 .header .menu {
    padding-right: 20px;
@@ -475,11 +468,9 @@ button {
       height: 100vh;
       padding-right: 0 !important;
       background: #fff;
-      top: 0;
+      top: 60px;
       left: -100%;
       z-index: 1;
-      -webkit-box-shadow: 0px 0px 15px 12px rgba(34, 60, 80, 0.2);
-      box-shadow: 0px 0px 15px 12px rgba(34, 60, 80, 0.2);
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
    }
@@ -493,6 +484,10 @@ button {
       -ms-flex-direction: column;
       flex-direction: column;
       text-align: center;
+      padding-top: 25%;
+   }
+   .menu__item {
+      font-size: 22px;
    }
    .menu.active {
       left: 0;
