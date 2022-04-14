@@ -35,6 +35,9 @@ html {
    -ms-flex-direction: column;
    flex-direction: column;
 }
+.wrapper.hidden {
+   overflow: hidden;
+}
 main {
    -webkit-box-flex: 1;
    -ms-flex: auto;
