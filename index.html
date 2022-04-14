@@ -248,12 +248,14 @@
    </div>
 
    <script>
-      const myBurger = document.querySelector('.header__burger');
-      const myNav = document.querySelector('.menu');
+      const Burger = document.querySelector('.header__burger');
+      const Nav = document.querySelector('.menu');
+      const Wrapper = document.querySelector('.wrapper');
 
-      myBurger.onclick = function() {
-         myNav.classList.toggle('active');
-         myBurger.classList.toggle('active')
+      Burger.onclick = function() {
+         Nav.classList.toggle('active');
+         Burger.classList.toggle('active');
+         Wrapper.classList.toggle('hidden');
       };
    </script>
 </body>
