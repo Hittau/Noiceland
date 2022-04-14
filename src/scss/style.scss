@@ -28,6 +28,9 @@ html {
    overflow-x: hidden;
    display: flex;
    flex-direction: column;
+   &.hidden {
+      overflow: hidden;
+   }
 }
 main {
    flex: auto;
